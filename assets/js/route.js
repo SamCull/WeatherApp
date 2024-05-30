@@ -8,7 +8,7 @@ window.navigator.geolocation.getCurrentPosition(res => {
     const { latitude, longitude } = res.coords;
 
     updateWeather(`lat=${latitude}`, `lon=${longitude}`);
-}, err=> {
+}, err => {
     window.location.hash = defaultLocation;
 });
 }
@@ -17,7 +17,7 @@ window.navigator.geolocation.getCurrentPosition(res => {
 
 
 /**
- * @param {string} query Searchd query 
+ * @param {string} query Searched query 
  */
 const searchedLocation = query => updateWeather(... query.split("&"));
 // updateWeather("lat=51.5073219", "lon=-0.1276474")
