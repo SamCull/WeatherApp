@@ -1,4 +1,5 @@
 
+
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -281,6 +282,13 @@ body {
 .label-1 { font-size: var(--label-1); }
 .label-2 { font-size: var(--label-2); }
 
+.fade-in { animation: fade-in 250ms ease forwards; }
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 
 /*-----------------------------------*\
@@ -472,7 +480,7 @@ article.container::before {
 .current-weather-card .meta-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .current-weather-card .meta-item:not(:last-child) {
