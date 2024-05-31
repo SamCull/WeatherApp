@@ -1,4 +1,4 @@
-# Weatherio: A Sleek Web-based Weather Application
+# Weatherio: A Web-based Weather Application
 
 Weatherio provides accurate, up-to-date weather information and forecasts, offers detailed current conditions, hourly updates, and a five-day forecast.
 
