@@ -44,13 +44,13 @@ export const getDate = function (dateUnix, timezone) {
  * @returns {string} Time string. formate: "HH:MM AM/PM"
  */
 export const getTime = function (timeUnix, timezone) {
-  const date = new Date((timeUnix + timezone) * 1000);
-  const hours = date.getUTCHours();
-  const minutes = date.getUTCMinutes();
-  const period = hours >= 12 ? "PM" : "AM";
-
-  return `${hours % 12 || 12}:${minutes} ${period}`;
-}
+    const date = new Date((timeUnix + timezone) * 1000);
+    const hours = date.getUTCHours();
+    const minutes = date.getUTCMinutes().toString().padStart(2, '0'); /* remove .toString().padStart(2, '0') */
+    const period = hours >= 12 ? "PM" : "AM";
+  
+    return `${hours % 12 || 12}:${minutes} ${period}`;
+  }
 
 /**
  * @param {number} timeUnix Unix date in seconds
@@ -58,12 +58,12 @@ export const getTime = function (timeUnix, timezone) {
  * @returns {string} Time string. formate: "HH AM/PM"
  */
 export const getHours = function (timeUnix, timezone) {
-  const date = new Date((timeUnix + timezone) * 1000);
-  const hours = date.getUTCHours();
-  const period = hours >= 12 ? "PM" : "AM";
-
-  return `${hours % 12 || 12} ${period}`;
-}
+    const date = new Date((timeUnix + timezone) * 1000);
+    const hours = date.getUTCHours();
+    const period = hours >= 12 ? "PM" : "AM";
+  
+    return `${hours % 12 || 12} ${period}`;
+  }
 
 /**
  * @param {number} mps Metter per seconds
