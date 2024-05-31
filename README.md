@@ -16,9 +16,12 @@ Built using:
 - **JavaScript** for dynamic interactions and fetching weather data from external APIs.
 - **OpenWeatherMap API** for real-time weather data.
 
-## Demo
+## Video Demo
 
-----
+
+https://github.com/SamCull/WeatherApp/assets/72495319/e407fe94-8dde-4c64-ab50-6ac6a9d97e33
+
+
 
 ## Features
 
